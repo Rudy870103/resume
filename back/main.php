@@ -1,1 +1,0 @@
-<h1 class="text-center mt-5" style="font-weight: 700;">請選擇管理項目</h1>
