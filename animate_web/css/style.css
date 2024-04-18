@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif+TC&amp;display=swap");
+
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Noto Serif TC', serif;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+header {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+.nav-link:hover {
+    background-color: #1f1f1f;
+    color: white;
+    border-radius: 5px;
+}
+
+.login a {
+    color: #1f1f1f;
+    font-family: 'Noto Serif TC', serif;
+}
+
+.login a:hover {
+    font-weight: bold;
+    color: rgb(255, 153, 0);
+    text-shadow: 2px 0px 1px #1f1f1f;
+}
+
+.login-btn{
+    background-color:#f8f8f8;
+    border:1px solid #1f1f1f;
+    border-radius: 10%;
+}
+.login-btn:hover{
+    background-color:#1f1f1f !important;
+    color: #f8f8f8;
+}
+
+.forget{
+    text-decoration: none;
+    color: #1f1f1f;
+}
+.forget:hover{
+    text-decoration:underline
+}

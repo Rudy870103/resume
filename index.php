@@ -238,19 +238,17 @@
                                 <ul id="portfolio-flters">
                                     <li data-filter="*" class="filter-active">全部</li>
                                     <li data-filter=".web-des">全端</li>
-                                    <li data-filter=".web-dev">純前端</li>
-                                    <li data-filter=".dig-mar">平面設計</li>
+                                    <li data-filter=".web-front">純前端</li>
+                                    <li data-filter=".design">平面設計</li>
                                 </ul>
                             </div>
                         </div>
                         <div class="row portfolio-container">
                             <div class="col-lg-4 col-md-6 portfolio-item web-des">
-                                <div class="portfolio-wrap">
+                                <div>
                                     <figure>
-                                        <img src="img/portfolio-1.jpg" class="img-fluid" alt="">
-                                        <a href="img/portfolio-1.jpg" data-lightbox="portfolio" data-title="Project Name" class="link-preview" title="Preview"><i class="fa fa-eye"></i></a>
-                                        <a href="#" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
-                                        <a class="portfolio-title" href="#">Project Name <span>Web Design</span></a>
+                                        <img src="./img/works-1.png" class="img-fluid" alt="">
+                                        <a class="portfolio-title" href="./animate_movie-theater-webside/index.php" target="_blank">全端作品-電影售票網</a>
                                     </figure>
                                 </div>
                             </div>
@@ -258,10 +256,8 @@
                             <div class="col-lg-4 col-md-6 portfolio-item web-des">
                                 <div class="portfolio-wrap">
                                     <figure>
-                                        <img src="img/portfolio-2.jpg" class="img-fluid" alt="">
-                                        <a href="img/portfolio-2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Project Name" title="Preview"><i class="fa fa-eye"></i></a>
-                                        <a href="#" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
-                                        <a class="portfolio-title" href="#">Project Name <span>Web Design</span></a>
+                                        <img src="./img/works-2.png" class="img-fluid" alt="">
+                                        <a class="portfolio-title" href="./animate_web/index.php" target="_blank">全端作品-個人網站</a>
                                     </figure>
                                 </div>
                             </div>

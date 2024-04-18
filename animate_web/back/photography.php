@@ -1,0 +1,1 @@
+<h1 class="text-center mt-5">日常撮影管理</h1>
