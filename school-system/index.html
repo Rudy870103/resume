@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter</title>
+    <style>
+        body{
+            background-image: url(./css/school.jpg);
+            background-size: cover;
+        }
+        .container{
+            width: 200vh;
+            margin: auto;
+        }
+        h3{
+            text-align: center;
+            font-size: 50px;
+        }
+        table{
+            margin: auto;
+            height: 50vh;
+        }
+        button{
+            height: 200px;
+            width: 200px;
+            border-radius: 20px;
+            font-size: 30px;
+            background-color: rgb(255, 255, 255,0.8);
+        }
+        .student{
+            margin-right: 50px;
+        }
+        .student:hover{
+            background-color: rgb(138, 224, 255);           
+        }
+        .teacher:hover{
+            background-color: rgb(255, 156, 200);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <table>
+            <h3>師生資料系統</h3>
+            <tr>
+                <td><a href="./student/student.html"><button class="student">學生</button></a></td>
+                <td><a href="./teacher/teacher.html"><button class="teacher">教師</button></a></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

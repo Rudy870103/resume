@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Go</title>
+    <style>
+        body {
+            background: url(./EaKMc-cXgAIGCmR.jpg_large);
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .cover {
+            width: 100vh;
+            height: 30vh;
+            background: url(./maxresdefault.jpg);
+            background-position: center;
+            background-size: cover;
+            border-radius: 20px;
+            margin-bottom: 1vh;
+        }
+
+        .container {
+            width: 100vh;
+            margin: auto;
+        }
+
+        .bar {
+            height: 15vh;
+            background: linear-gradient(rgb(255, 0, 0) 50% , rgb(225, 0, 0) 50%);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 3vh;
+            border-radius: 20px;
+            margin-bottom: 1vh;
+            border-right: 5px solid white;
+            border-bottom: 5px solid white;
+            border-left: 5px solid black;
+            border-top: 5px solid black;
+        }
+
+        .bar a {
+            color: white;
+            font-weight: bold;
+            text-shadow: 2px 2px black;
+        }
+
+        .bar a:hover {
+            color: yellow;
+            font-size: 110%;
+        }
+
+        .bar a:active {
+            color: black;
+        }
+
+        .content {
+            text-align: center;
+            background: url(./content-bg-01.png);
+            background-size: cover;
+            border-radius: 20px;
+            padding: 10px;
+        }
+
+        .pokemon {
+            display: flex;
+            justify-content: space-around;
+           
+           
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 20px;
+            margin-bottom: 1vh;
+        }
+
+        .items {
+            width: 25%;
+            text-align: center;
+            font-size: 12px;
+            line-height: 150%;
+            border: 1px solid black;
+            border-radius: 20px;
+            padding: 10px;
+            margin: 10px;
+            background-color: rgb(255, 255, 255);
+        }
+        .items img{
+            width: 100%;
+        }
+        .youtube{
+            text-align: center;
+            background: rgb(255, 255, 255, 0.9);
+            border-radius: 20px;
+            padding: 10px;
+            margin-top: 1vh;
+            margin-bottom: 1vh;
+        }
+        .video {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1vh;
+        }
+
+        .map{
+            text-align: center;
+            background: rgb(255, 255, 255, 0.9);
+            border-radius: 20px;
+            padding: 10px;
+            margin-top: 1vh;
+            margin-bottom: 5vh;
+            
+        }
+        .gmap {
+            display: flex;
+            justify-content: space-between;
+            height: 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="cover"></div>
+        <div class="bar" id="top">
+            <p><a href="#1">寶可夢資料</a></p>
+            <p><a href="#2">影片介紹</a></p>
+            <p><a href="#3">出沒地點</a></p>
+        </div>
+        <div class="content" id="1">
+            <div class="title">
+                <h2>寶可夢資料</h2>
+            </div>
+            <div class="pokemon">
+                <div class="items">
+                    <img src="./1.png" alt="">
+                    <h3>耿鬼</h3>
+                    <span>耿鬼是深紫色的寶可夢，牠有一雙腿和一個短而尖的尾巴。耿鬼的眼睛是紅色的，背後有些刺狀的突起，牠的嘴角彎彎翹起，帶著一絲微笑。超級耿鬼全身各部分均有尖刺，身體的下半部分為紫紅色。原本的尾巴生出了尖刺。額頭正中有一個黃色的類似金幣的物體，中間有空洞。超極巨耿鬼的嘴巴變得很大，張開的大嘴巴裡吐出了長長的舌頭，無法看到嘴巴裡面的具體情況，它的兩個手臂相較於嘴巴來說要小得多。</span>
+                </div>
+                <div class="items">
+                    <img src="./2.png" alt="">
+                    <h3>風速狗</h3>
+                    <span>風速狗是外表類似大型犬類的寶可夢。牠有蓬鬆的亞麻色毛髮，覆蓋了面部。眼睛變為褐色，身體有像老虎般的黑橙條紋，腳上有毛髮圍繞著，尾部則有長尾，奔跑時身體猶如與風融合，相當有威嚴。洗翠風速狗看起來像一個石獅子。它的毛髮為灰黑色，頭頂的毛髮形成了一個角，脖子周圍的一圈毛髮宛如花瓣向四周展開，中間帶有紅色的毛髮。它的尾巴向上，腳上也有毛髮圍繞。</span>
+                </div>
+                <div class="items">
+                    <img src="./3.png" alt="">
+                    <h3>沙奈朵</h3>
+                    <span>沙奈朵的身體是白色的，下方裙擺的內側是綠色的。牠的髮型變成了捲曲的形狀，一直延伸到頭的下方，紅色的結構移到了胸前和後背。牠的手臂是綠色的，手臂與手之間沒有明顯的界限。超級沙奈朵胸前的紅色結構有兩個，據說是它實體化的心。它耳邊的毛髮變得更長了，手臂也變成了白色，下方的裙擺也變得更加蓬鬆。</span>
+                </div>
+            </div>
+            <span><a href="#top">top</a></span>
+        </div>
+        <div class="youtube" id="2">
+            <div class="title">
+                <h2>影片介紹</h2>
+            </div>
+            <div class="video">
+                <iframe width="30%" height="315" src="https://www.youtube.com/embed/2qOUu5f2Zoc?si=yzIq3nt-OKYzuXNk"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <iframe width="30%" height="315" src="https://www.youtube.com/embed/j1zU7jwIkl8?si=t-03UJ_eNYPXTwwn"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <iframe width="30%" height="315" src="https://www.youtube.com/embed/BNB2Qn8RbAA?si=4x72tuQx_vBqQ69H"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <span><a href="#top">top</a></span>
+        </div>
+        <div class="map" id="3">
+            <div class="title">
+                <h2>出沒地點</h2>
+            </div>
+            <div class="gmap">
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d57777.015497796936!2d121.51569288793175!3d25.167334695761962!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442b213f0d75b45%3A0x443012970a340e48!2z5aSn5bGv54Gr5bGx576k!5e0!3m2!1szh-TW!2stw!4v1696995967949!5m2!1szh-TW!2stw"
+                width="30%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.8085983440574!2d121.55627086758614!3d25.07447564322724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ac735c088297%3A0x265ecc0587aacfa5!2z576O5aCk5rKz5r-x5YWs5ZyS6LaK6YeO6LO96LuK5aC0!5e0!3m2!1szh-TW!2stw!4v1696996024022!5m2!1szh-TW!2stw"
+                width="30%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1807.5327497885546!2d121.50707747787233!3d25.031851144442996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a94f3712507b%3A0x890e4a55e21e821!2z6Ie65YyX5qSN54mp5ZyS!5e0!3m2!1szh-TW!2stw!4v1696996068272!5m2!1szh-TW!2stw"
+                width="30%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <span><a href="#top">top</a></span>
+        </div>
+    </div>
+
+    <div class="container2"></div>
+</body>
+
+</html>

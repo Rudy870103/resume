@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+    <style>
+        body{
+            background-image: url(../css/blackboard.jpg);
+            background-size: cover;
+        }
+        .container {
+            width: 30%;
+            margin: auto;
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 20px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            margin-top: 50px;
+            background-color: rgb(255, 255, 255,0.3);
+        }
+        h3{
+            font-size: 30px;
+        }
+        table,tr,td{
+            width: 100%;
+            text-align: center;
+        }
+        td{
+            text-align: center;
+        }
+        input{
+            width: 50%;
+            margin-top: 10px;
+            border-radius: 10px;
+            padding: 5px;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+        #file{
+            width: 50%;
+            margin-left: 140px;
+            background-color: unset;
+        }
+        #submit{
+            width: 100px;
+            height: 30px;
+            margin-bottom: 20px;
+            border-radius: 20px;
+            background-color: rgb(95, 95, 95)
+        }
+        #submit:hover{
+            background-color: white;
+            color: black;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="" enctype="multipart/form-data">
+            <table>
+                <h3>Edit</h3>
+                <tr>
+                    <td>
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" value="Teacher - Taylor">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="phone">Phone:</label>
+                        <input type="text" name="phone" id="phone" value="0911-111-110">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <input type="submit" name="submit" id="submit" value="Submit">
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+    </div>
+</body>
+
+</html>

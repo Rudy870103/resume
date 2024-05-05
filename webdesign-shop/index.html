@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>231122practice</title>
+    <style>
+        body {
+            background-color: rgb(0, 28, 53);
+        }
+        .shop{
+            background-image: url(./img/shop-banner.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+        
+        .shop table {
+            width: 50%;
+            background-color: rgba(255, 255, 255, .5);
+            backdrop-filter: blur(20px);
+            text-align: center;
+            border: 1px solid white;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .shop td {
+            width: 25%;
+            height: 10px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+    
+        .container-fluid {
+            padding: 0px 80px;
+        }
+
+        .nav-link:hover,
+        .dropdown:hover {
+            background-color: rgb(35, 84, 127);
+            border-radius: 5px;
+            color: white;
+        }
+
+        .tab-content {
+            background-color: rgb(35, 84, 127);
+        }
+
+        .nav-link:hover {
+            background-color: rgb(35, 84, 127);
+        }
+
+        .nav-link:active {
+            background-color: rgb(35, 84, 127);
+        }
+
+        .nav-tabs .nav-link.active {
+            background-color: rgb(35, 84, 127);
+            color: white;
+            border: none;
+        }
+
+        .card {
+            height: 500px;
+            border: none;
+            position: relative;
+            box-shadow: 5px 5px 10px rgb(18, 43, 66);
+        }
+
+        .card-body .btn {
+            position: absolute;
+            right: 15px;
+            bottom: 10px;
+        }
+
+        .myfooter {
+            padding: 50px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 50px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 2px 0px 5px black;
+            background: linear-gradient(to right, rgb(241, 255, 113), rgb(119, 219, 169), rgb(64, 230, 147));
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- nav bar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="" width="100px"></a>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link " aria-current="page" href="./index.html">Home</a>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                最新消息
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#1">近期活動</a></li>
+                                <li><a class="dropdown-item" href="#2">近期出現寶可夢</a></li>
+                                <li><a class="dropdown-item" href="#2">近期焦點寶可夢</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                相關網站
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="https://pokemongolive.com/?hl=zh_Hant">寶可夢官網</a></li>
+                                <li><a class="dropdown-item"
+                                        href="https://www.instagram.com/pokemongojiang/">活動整理ig粉絲專頁</a></li>
+                                <li><a class="dropdown-item"
+                                        href="https://www.facebook.com/groups/932304146879607/">玩家交流臉書社團</a></li>
+                            </ul>
+                        </div>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#first">
+                            登入
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="modal fade " id="first" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content ">
+                    <div class="modal-header ">
+                        <h1 class="modal-title fs-5 " id="staticBackdropLabel">登入功能</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        將在近期推出，敬請期待❤️
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">了解</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- carousel -->
+        <div id="carouselExampleCaptions" class="carousel slide mt-5 mb-5">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/bg1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>等下一個天亮</h5>
+                        <p>把偷拍我看海的照片送我好嗎</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/bg2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>你陪著我的時候想著他</h5>
+                        <p>明明我知道，卻裝作沒想法，是善體人意還是傻瓜</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/bg3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>因為我們知道</h5>
+                        <p>這天終究會來到，所以不計較，只要彼此可以過得更好</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/bg4.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>一個人旅行</h5>
+                        <p>一個人代替，一個人陪伴一個人孤寂</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- shop -->
+        <div class="shop mb-5">
+            <div class="product">
+                <table>
+                <tr style="font-size: 20px;">
+                    <th>產品</th>
+                    <th>單價</th>
+                    <th>數量</th>
+                    <th>總價</th>
+                </tr>
+                <tr>
+                    <td><img src="./img/1.png" alt="" width="100%"></td>
+                    <td><input type="text" name="productPrice" id="productPrice" value="888" readonly></td>
+                    <td><input type="number" name="productCount" id="productCount" value="0"></td>
+                    <td><input type="text" name="productTotal" id="productTotal" value="0" readonly></td>
+                </tr>
+                <tr>
+                    <td><img src="./img/2.png" alt="" width="100%"></td>
+                    <td><input type="text" name="productPrice2" id="productPrice2" value="1888" readonly></td>
+                    <td><input type="number" name="productCount2" id="productCount2" value="0"></td>
+                    <td><input type="text" name="productTotal2" id="productTotal2" value="0" readonly></td>
+                </tr>
+                <tr>
+                    <td><img src="./img/3.png" alt="" width="100%"></td>
+                    <td><input type="text" name="productPrice3" id="productPrice3" value="8888" readonly></td>
+                    <td><input type="number" name="productCount3" id="productCount3" value="0"></td>
+                    <td><input type="text" name="productTotal3" id="productTotal3" value="0" readonly></td>
+                </tr>
+                <tr>
+                    <td colspan="2"></td>
+                    <td colspan="2"><button type="submit" id="btn" class="btn btn-primary">結帳</button>&nbsp&nbsp&nbsp&nbsp
+                        <input type="text" name="total" id="total" readonly>
+                    </td>
+                </tr>
+            </table>
+            </div>
+            
+            
+        </div>
+
+        <!-- shop end -->
+        <!-- navs tabs -->
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                    type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"
+                    style="color: white;">最新消息</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                    type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"
+                    style="color: white;">近期出現寶可夢</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
+                    type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false"
+                    style="color: white;">近期焦點寶可夢</button>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                tabindex="0">
+                <!-- card -->
+                <div class="row p-5" id="1">
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img src="./img/card1.jpg" class="card-img-top col-4" alt="進行小隊合作，並與來自帕底亞地區的寶可夢一同慶祝吧！">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>進行小隊合作，並與來自帕底亞地區的寶可夢一同慶祝吧！</b></h5>
+                                <p class="card-text">親愛的訓練家們：
+
+                                    賽季即將進入尾聲，而Pokémon GO將舉辦壓軸活動，慶祝小隊合作上線以及所有來自帕底亞地區的寶可夢將在「冒險時光」中首度登場！讓我們一起組隊GO吧！</p>
+                                <a href="https://pokemongolive.com/zh_hant/post/season12-finale-2023/"
+                                    class="btn btn-primary" target="_blank">More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img src="./img/card2.jpg" class="card-img-top col-4" alt="時裝週重磅回歸，換上時尚服飾的寶可夢即將登場！">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>時裝週重磅回歸，換上時尚服飾的寶可夢即將登場！</b></h5>
+                                <p class="card-text">親愛的訓練家們：
+
+                                    準備好參與Pokémon GO最時尚的寶可夢時裝秀了嗎？這次不只有首度登場Pokémon GO的異色「哥德寶寶」，還有換上時尚服飾的「快龍」與「烏波」喔！</p>
+                                <a href="https://pokemongolive.com/zh_hant/post/fashion-week-2023/"
+                                    class="btn btn-primary" target="_blank">More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img src="./img/card3.jpg" class="card-img-top col-4" alt="2023年11月經典社群日：咩利羊">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>2023年11月經典社群日：咩利羊</b></h5>
+                                <p class="card-text">台灣時間2023年11月25日（星期六）14:00～17:00
+
+                                    親愛的訓練家們：
+
+                                    我們在此很興奮地宣布，11月經典社群日的主角寶可夢會是綿毛寶可夢「咩利羊」！</p>
+                                <a href="https://pokemongolive.com/zh_hant/post/communityday-classic-mareep/"
+                                    class="btn btn-primary" target="_blank">More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 近期出現寶可夢 -->
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                <img src="./img/collapse1.jpg" alt="近期出現寶可夢" height="100%" width="100%">
+            </div>
+
+            <!-- 近期焦點寶可夢 -->
+            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                <img src="./img/collapse2.jpg" alt="近期焦點寶可夢" height="100%" width="100%">
+            </div>
+        </div>
+        <!-- navs tabs end -->
+
+        <div class="banner">
+            <div class="col-12 mt-5">
+                <img src="./img/banner1.png" alt="" width="100%">
+            </div>
+            <div class="col-12 mt-5">
+                <img src="./img/banner2.png" alt="" width="100%">
+            </div>
+            <div class="col-12 mt-5 myfooter">
+                <img src="./img/logo.png" alt="" width="300px">
+                <p>今天就開始去冒險!</p>
+            </div>
+        </div>
+
+
+        <!-- footer -->
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 mt-5 border-top bg-light">
+            <div class="col mb-3">
+                <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+                <p class="text-muted ps-5">© 2023/11 Rudy_Chen</p>
+            </div>
+
+            <div class="col mb-3"></div>
+
+            <div class="col mb-3">
+                <h5>服務條款</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">純粹喜歡玩</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">然後善於查資料</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">所以是服務自己</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">你合則來</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">不合則去</a></li>
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5>隱私權政策</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">也沒什麼隱私</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">都是網路查得到的資料</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">上面只有寶可夢個資</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">但寶可夢個資不算隱私</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">...對吧?</a></li>
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5>著作權政策</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">這排版是我自己排的啦</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">但元素細節是Bootstrap5</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">然後圖都是網路上找的</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">沒有要商用</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">所以拜託別檢舉(?)</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+
+    <script>
+        let productPrice = document.getElementById('productPrice');
+        let productCount = document.getElementById('productCount');
+        let productTotal = document.getElementById('productTotal');
+        let productPrice2 = document.getElementById('productPrice2');
+        let productCount2 = document.getElementById('productCount2');
+        let productTotal2 = document.getElementById('productTotal2');
+        let productPrice3 = document.getElementById('productPrice3');
+        let productCount3 = document.getElementById('productCount3');
+        let productTotal3 = document.getElementById('productTotal3');
+        let btn = document.getElementById('btn');
+        let total = document.getElementById('total');
+        // let count = document.getElementById('count');
+
+        productPrice.addEventListener('input', count);
+        productCount.addEventListener('input', count);
+
+        productPrice2.addEventListener('input', count2);
+        productCount2.addEventListener('input', count2);
+
+        productPrice3.addEventListener('input', count3);
+        productCount3.addEventListener('input', count3);
+
+
+        btn.addEventListener('click', function () {
+            total.value = parseInt(productTotal.value) + parseInt(productTotal2.value) + parseInt(productTotal3.value);
+        })
+
+        function count() {
+            productTotal.value = productPrice.value * productCount.value;
+        }
+        function count2() {
+            productTotal2.value = productPrice2.value * productCount2.value;
+        }
+        function count3() {
+            productTotal3.value = productPrice3.value * productCount3.value;
+        }
+
+
+    </script>
+</body>
+
+</html>
