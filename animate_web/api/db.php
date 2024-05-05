@@ -10,8 +10,8 @@ class DB{
     public function __construct($table)
     {
         $this->table=$table;
-        // $this->pdo=new PDO($this->dsn,'s1120417','s1120417');
-        $this->pdo=new PDO($this->dsn,'root','');
+        $this->pdo=new PDO($this->dsn,'s1120417','s1120417');
+        // $this->pdo=new PDO($this->dsn,'root','');
     }
 
 
@@ -141,11 +141,11 @@ function to($url){
     header("location:$url");
 }
 
-$User=new DB('user');
-$Motto=new DB('motto');
-$News=new DB('news');
-$Vote=new DB('vote');
-$Message=new DB('message');
+$User=new DB('web-user');
+$Motto=new DB('web-motto');
+$News=new DB('web-news');
+$Vote=new DB('web-vote');
+$Message=new DB('web-message');
 
 
 

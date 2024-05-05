@@ -9,7 +9,7 @@
     <meta content="Resume Website Template Free Download" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="./img/favicon.ico" rel="icon">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:300;400;600;700;800&display=swap" rel="stylesheet">
@@ -17,15 +17,15 @@
     <!-- CSS Libraries -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="lib/slick/slick.css" rel="stylesheet">
-    <link href="lib/slick/slick-theme.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="./mylib/slick/slick.css" rel="stylesheet">
+    <link href="./mylib/slick/slick-theme.css" rel="stylesheet">
+    <link href="./mylib/lightbox/css/lightbox.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
@@ -65,6 +65,7 @@
                 </nav>
             </div>
             <div class="sidebar-footer">
+                <a href="https://github.com/Rudy870103/" target="_blank"><i class="fa-brands fa-github" style="font-size: 30px;" title="github"></i></a>
                 <a href="https://www.instagram.com/rudy_chenboru/" target="_blank"><i class="fab fa-instagram" style="font-size: 30px;"></i></a>
             </div>
         </div>
@@ -235,13 +236,14 @@
                     <div>
                         <h3>網路商城</h3>
                         <div class="d-flex">
-                            <div>
+                            <div style="width: 100%;">
                                 <img src="./img/online-shop-front.png" style="width:100%">
                             </div>
                             <div class="ml-5">
                                 <span style="font-size: 20px;"><i class="fa-solid fa-star"></i>利用SESSION方式記錄​購物車內容​</span><br><br>
                                 網路購物已成為一大消費習慣，清楚的資訊及方便的購物方式可以增加消費者的購買意願，透過商品縮圖右下角的購物車icon，可以快速將商品加入購物車，且在購物車確認頁面中，可以修改商品數量及即時顯示總金額<br><br>
-                                <a class="myBtn" href="./animate_online-shop/" target="_blank">觀看作品</a>
+                                <a class="myBtn" href="./animate_shop/index.php" target="_blank">觀看作品</a>
+                                <a class="blackBtn" href="https://github.com/Rudy870103/animate_online-shop" target="_blank"><i class="fa-brands fa-github" style="font-size: 20px;" title="github"></i></a>
                             </div>
                         </div>
                     </div>
@@ -249,13 +251,14 @@
                     <div>
                         <h3>電影售票網</h3>
                         <div class="d-flex">
-                            <div>
+                            <div style="width: 100%;">
                                 <img src="./img/movie-front.png" style="width:100%">
                             </div>
                             <div class="ml-5">
                                 <span style="font-size: 20px;"><i class="fa-solid fa-star"></i>利用發送AJAX請求的方式傳送訂票訊息​</span><br><br>
                                 看電影已成為現代人時常列入周末行程的選項之一，我也是熱愛看電影的人，因此利用所學設計電影售票網，使用者除了可以查詢正在上映的電影外，更可以直接在登入後，於首頁快速訂票<br><br>
-                                <a class="myBtn" href="./animate_movie-theater-webside/" target="_blank">觀看作品</a>
+                                <a class="myBtn" href="./animate_movie/index.php" target="_blank">觀看作品</a>
+                                <a class="blackBtn" href="https://github.com/Rudy870103/AniMate_movie-theater-webside" target="_blank"><i class="fa-brands fa-github" style="font-size: 20px;" title="github"></i></a>
                             </div>
                         </div>
                     </div>
@@ -263,13 +266,15 @@
                     <div>
                         <h3>個人網站</h3>
                         <div class="d-flex">
-                            <div style="height: 300px;overflow:hidden">
+                            <div style="height: 300px;overflow:hidden;width: 100%;">
                                 <img src="./img/animate-web-front.png" style="width:100%">
                             </div>
                             <div class="ml-5">
                                 <span style="font-size: 20px;"><i class="fa-solid fa-star"></i>靈活運用資料庫CRUD​</span><br><br>
                                 社交平台普及，讓網路自媒體有著不凡影響力，許多品牌也利用官方網站塑造品牌形象，使用HTML打造個人官方網站，並靈活運用MySQL資料庫分享豐富內容<br><br>
-                                <a class="myBtn" href="./animate_web/" target="_blank">觀看作品</a>
+                                <a class="myBtn" href="./animate_web/index.php" target="_blank">觀看作品</a>
+                                <a class="blackBtn" href="https://github.com/Rudy870103/20240116-animate_web" target="_blank"><i class="fa-brands fa-github" style="font-size: 20px;" title="github"></i></a>
+
                             </div>
                         </div>
                     </div>
@@ -287,11 +292,11 @@
                         </div>
                     </div>
                     <div class="row portfolio-container">
-                    <div class="col-lg-4 col-md-6 portfolio-item web-des">
+                        <div class="col-lg-4 col-md-6 portfolio-item web-des">
                             <div>
                                 <figure>
                                     <img src="./img/online-shop-front.png" class="img-fluid" alt="">
-                                    <a class="portfolio-title" href="./animate_online-shop/" target="_blank">全端作品-網路商城</a>
+                                    <a class="portfolio-title" href="./animate_shop/index.php" target="_blank">全端作品-網路商城</a>
                                 </figure>
                             </div>
                         </div>
@@ -299,7 +304,7 @@
                             <div>
                                 <figure>
                                     <img src="./img/works-1.png" class="img-fluid" alt="">
-                                    <a class="portfolio-title" href="./animate_movie-theater-webside/index.php" target="_blank">全端作品-電影售票網</a>
+                                    <a class="portfolio-title" href="./animate_movie/index.php" target="_blank">全端作品-電影售票網</a>
                                 </figure>
                             </div>
                         </div>
@@ -385,7 +390,7 @@
             <!-- Portfolio Start -->
 
             <!-- Review Start -->
-            <div class="review" id="review">
+            <!-- <div class="review" id="review">
                 <div class="content-inner">
                     <div class="content-header">
                         <h2>Review</h2>
@@ -441,7 +446,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- Review End -->
 
             <!-- Contact Start -->
@@ -489,15 +494,15 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/slick/slick.min.js"></script>
-    <script src="lib/typed/typed.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="./mylib/easing/easing.min.js"></script>
+    <script src="./mylib/slick/slick.min.js"></script>
+    <script src="./mylib/typed/typed.min.js"></script>
+    <script src="./mylib/waypoints/waypoints.min.js"></script>
+    <script src="./mylib/isotope/isotope.pkgd.min.js"></script>
+    <script src="./mylib/lightbox/js/lightbox.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

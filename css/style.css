@@ -1113,6 +1113,8 @@ a:focus {
 
 
 
+/* own css */
+
 .myBtn{
     border: 2px solid #006aff;
     border-radius: 5px;
@@ -1124,6 +1126,20 @@ a:focus {
 
 .myBtn:hover{
     background-color: #006aff;
+    color: white;
+}
+
+.blackBtn{
+    border: 2px solid #212121;
+    border-radius: 5px;
+    padding: 2px 8px;
+    background-color: white;
+    color: #212121;
+    font-weight: bold;
+}
+
+.blackBtn:hover{
+    background-color: #212121;
     color: white;
 }
 
